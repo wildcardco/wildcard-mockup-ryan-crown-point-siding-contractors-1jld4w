@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crown Point Siding Contractors — Built for Region Weather | Crown Point, IN</title>
+<meta name="description" content="High-wind-rated siding installation, storm damage repair, and full re-sides for Crown Point and Lake County, Indiana homes. Local crew, straight estimates, 5.0 rating.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --charcoal:#1b1e21;
+  --slate:#2b3036;
+  --slate-2:#383e45;
+  --panel:#22262b;
+  --bone:#eceae4;
+  --mist:#b7bcc2;
+  --amber:#e8960f;
+  --amber-deep:#c47a05;
+  --hairline:rgba(236,234,228,.14);
+  --head:'Barlow Condensed',sans-serif;
+  --body:'Barlow',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--charcoal);
+  color:var(--bone);
+  font-size:1.0625rem;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--amber);color:var(--charcoal)}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,.stamp{font-family:var(--head);text-transform:uppercase;line-height:.95;letter-spacing:.01em}
+
+/* ——— skip link ——— */
+.skip{position:absolute;left:-999px;top:0;background:var(--amber);color:var(--charcoal);padding:.6rem 1rem;font-weight:600;z-index:99}
+.skip:focus{left:0}
+
+/* ——— siding lap texture (repeating clapboard shadow lines) ——— */
+.laps{
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      var(--slate) 0px, var(--slate) 52px,
+      #23272c 52px, #23272c 56px,
+      #454c54 56px, #454c54 57px
+    );
+}
+
+/* ——— header ——— */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(27,30,33,.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--hairline);
+}
+.bar{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:.85rem 1.25rem;
+}
+.wordmark{
+  font-family:var(--head);font-weight:800;text-transform:uppercase;
+  font-size:1.15rem;letter-spacing:.06em;text-decoration:none;
+  display:flex;align-items:center;gap:.6rem;
+}
+.wordmark svg{flex:none}
+.wordmark span em{font-style:normal;color:var(--amber)}
+nav.main{display:none}
+nav.main a{
+  text-decoration:none;font-family:var(--head);font-weight:600;
+  text-transform:uppercase;letter-spacing:.09em;font-size:.9rem;
+  color:var(--mist);padding:.4rem 0;border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s;
+}
+nav.main a:hover{color:var(--bone);border-color:var(--amber)}
+.btn{
+  display:inline-block;text-decoration:none;
+  font-family:var(--head);font-weight:700;text-transform:uppercase;
+  letter-spacing:.08em;
+  background:var(--amber);color:var(--charcoal);
+  padding:.7rem 1.4rem;
+  border:2px solid var(--amber);
+  transition:background .2s,color .2s,transform .15s;
+}
+.btn:hover{background:transparent;color:var(--amber)}
+.btn:active{transform:translateY(1px)}
+.btn-ghost{background:transparent;color:var(--bone);border-color:var(--bone)}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber);background:transparent}
+.head-cta{font-size:.95rem;padding:.55rem 1.1rem}
+
+/* ——— hero: the wind-rating wall ——— */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:6px solid var(--amber);
+}
+.hero-inner{
+  max-width:1200px;margin:0 auto;
+  padding:4.5rem 1.25rem 3.5rem;
+  position:relative;
+}
+.hero .tag{
+  font-family:var(--head);font-weight:600;text-transform:uppercase;
+  letter-spacing:.28em;font-size:.85rem;color:var(--amber);
+  display:flex;align-items:center;gap:.7rem;margin-bottom:1.2rem;
+}
+.hero .tag::before{content:"";width:34px;height:2px;background:var(--amber)}
+.mph{
+  font-family:var(--head);font-weight:800;text-transform:uppercase;
+  font-size:clamp(6rem,24vw,19rem);
+  line-height:.82;letter-spacing:-.015em;
+  color:var(--bone);
+  text-shadow:0 3px 0 rgba(0,0,0,.35);
+}
+.mph small{
+  display:block;font-size:clamp(1.3rem,4.5vw,3rem);
+  letter-spacing:.32em;color:var(--amber);
+  margin-top:.35em;font-weight:700;
+}
+.hero-sub{
+  max-width:34rem;margin-top:1.8rem;
+  font-size:1.15rem;color:var(--mist);
+}
+.hero-sub strong{color:var(--bone)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.hero-proof{
+  margin-top:2.6rem;padding-top:1.4rem;
+  border-top:1px solid var(--hairline);
+  display:flex;flex-wrap:wrap;gap:1.5rem 3rem;
+  font-size:.95rem;color:var(--mist);
+}
+.hero-proof b{
+  display:block;font-family:var(--head);font-weight:700;text-transform:uppercase;
+  font-size:1.5rem;color:var(--bone);letter-spacing:.03em;line-height:1.1;
+}
+.hero-proof b .star{color:var(--amber)}
+
+/* nail-head detail on hero */
+.nails{position:absolute;top:0;right:1.25rem;bottom:0;width:6px;pointer-events:none;
+  background:repeating-linear-gradient(to bottom,transparent 0 50px,rgba(0,0,0,.5) 50px 56px);
+  border-radius:3px;opacity:.5}
+
+/* ——— section scaffolding ——— */
+section{padding:4.5rem 1.25rem}
+.wrap{max-width:1200px;margin:0 auto}
+.kicker{
+  font-family:var(--head);font-weight:600;text-transform:uppercase;
+  letter-spacing:.28em;font-size:.8rem;color:var(--amber);
+  display:flex;align-items:center;gap:.7rem;margin-bottom:1rem;
+}
+.kicker::before{content:"";width:28px;height:2px;background:var(--amber)}
+h2{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:800;margin-bottom:1.2rem}
+.lede{color:var(--mist);max-width:38rem;font-size:1.1rem}
+
+/* ——— services: spec-sheet ledger ——— */
+#services{background:var(--panel);border-bottom:1px solid var(--hairline)}
+.ledger{margin-top:2.5rem;border-top:1px solid var(--hairline)}
+.row{
+  display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.4rem;
+  padding:1.5rem 0;border-bottom:1px solid var(--hairline);
+  align-items:baseline;
+  transition:background .2s;
+}
+.row:hover{background:rgba(232,150,15,.05)}
+.row .num{
+  font-family:var(--head);font-weight:700;color:var(--amber);
+  font-size:1rem;letter-spacing:.1em;
+}
+.row h3{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:700}
+.row p{grid-column:2;color:var(--mist);max-width:44rem;font-size:1rem}
+
+/* ——— storm block ——— */
+#storm{
+  background:
+    linear-gradient(rgba(27,30,33,.78),rgba(27,30,33,.92)),
+    repeating-linear-gradient(to bottom,var(--slate) 0 52px,#23272c 52px 56px,#454c54 56px 57px);
+  border-block:1px solid var(--hairline);
+}
+.storm-grid{display:grid;gap:2.5rem;margin-top:2.5rem}
+.storm-card{
+  background:var(--charcoal);border:1px solid var(--hairline);
+  border-left:5px solid var(--amber);
+  padding:1.6rem 1.5rem;
+}
+.storm-card h3{font-size:1.4rem;margin-bottom:.5rem;letter-spacing:.04em}
+.storm-card p{color:var(--mist);font-size:1rem}
+.hazard{
+  margin-top:2.5rem;
+  font-family:var(--head);font-weight:700;text-transform:uppercase;
+  letter-spacing:.15em;font-size:.9rem;color:var(--charcoal);
+  background:repeating-linear-gradient(45deg,var(--amber) 0 14px,var(--amber-deep) 14px 28px);
+  padding:.8rem 1.2rem;display:inline-block;
+}
+
+/* ——— why local ——— */
+.split{display:grid;gap:3rem;margin-top:2.5rem}
+.checklist{list-style:none;display:grid;gap:1.1rem}
+.checklist li{
+  display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;
+  color:var(--mist);
+}
+.checklist li strong{color:var(--bone);display:block;font-family:var(--head);text-transform:uppercase;font-size:1.15rem;letter-spacing:.05em}
+.checklist svg{margin-top:.25rem;flex:none}
+.rating-slab{
+  background:var(--panel);border:1px solid var(--hairline);
+  padding:2.2rem 1.8rem;text-align:center;
+  align-self:start;
+}
+.rating-slab .big{
+  font-family:var(--head);font-weight:800;font-size:5.5rem;line-height:1;color:var(--bone);
+}
+.rating-slab .stars{color:var(--amber);font-size:1.4rem;letter-spacing:.3em;margin:.4rem 0 .6rem}
+.rating-slab p{color:var(--mist);font-size:.95rem}
+
+/* ——— process ——— */
+#process{background:var(--panel);border-block:1px solid var(--hairline)}
+.steps{margin-top:2.5rem;display:grid;gap:0;counter-reset:step}
+.step{
+  border-top:1px solid var(--hairline);
+  padding:1.6rem 0 1.6rem 4.2rem;position:relative;counter-increment:step;
+}
+.step::before{
+  content:counter(step,decimal-leading-zero);
+  position:absolute;left:0;top:1.55rem;
+  font-family:var(--head);font-weight:800;font-size:1.9rem;color:var(--amber);
+}
+.step h3{font-size:1.35rem;margin-bottom:.35rem;letter-spacing:.04em}
+.step p{color:var(--mist);font-size:1rem;max-width:42rem}
+
+/* ——— service area ——— */
+.area-tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+.area-tags span{
+  font-family:var(--head);font-weight:600;text-transform:uppercase;
+  letter-spacing:.09em;font-size:.9rem;
+  border:1px solid var(--hairline);padding:.45rem .9rem;color:var(--mist);
+}
+.area-tags span.hq{border-color:var(--amber);color:var(--amber)}
+
+/* ——— contact ——— */
+#contact{
+  background:
+    linear-gradient(rgba(27,30,33,.82),rgba(27,30,33,.94)),
+    repeating-linear-gradient(to bottom,var(--slate) 0 52px,#23272c 52px 56px,#454c54 56px 57px);
+  border-top:6px solid var(--amber);
+}
+.contact-grid{display:grid;gap:2.5rem;margin-top:2.5rem}
+.contact-list{list-style:none;display:grid;gap:1.3rem}
+.contact-list li b{
+  display:block;font-family:var(--head);font-weight:700;text-transform:uppercase;
+  letter-spacing:.12em;font-size:.85rem;color:var(--amber);margin-bottom:.15rem;
+}
+.contact-list a{text-decoration:none;border-bottom:1px solid var(--hairline);transition:border-color .2s}
+.contact-list a:hover{border-color:var(--amber)}
+.phone-big{
+  font-family:var(--head);font-weight:800;font-size:clamp(2rem,7vw,3.2rem);
+  letter-spacing:.02em;
+}
+.contact-note{
+  background:var(--charcoal);border:1px solid var(--hairline);
+  padding:1.8rem 1.6rem;align-self:start;
+}
+.contact-note h3{font-size:1.4rem;margin-bottom:.6rem;letter-spacing:.04em}
+.contact-note p{color:var(--mist);font-size:1rem;margin-bottom:1rem}
+
+/* ——— footer ——— */
+footer{
+  border-top:1px solid var(--hairline);
+  padding:2rem 1.25rem;
+  font-size:.85rem;color:var(--mist);
+}
+footer .wrap{display:flex;flex-direction:column;gap:.5rem}
+footer .credit{opacity:.65}
+
+/* ——— reveals (CSS only, respects reduced motion) ——— */
+@media (prefers-reduced-motion:no-preference){
+  .reveal{opacity:0;transform:translateY(18px);animation:rise .7s ease forwards}
+  @supports (animation-timeline: view()){
+    .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  }
+  @keyframes rise{to{opacity:1;transform:none}}
+}
+
+/* ——— responsive ——— */
+@media (min-width:720px){
+  nav.main{display:flex;gap:1.8rem}
+  .storm-grid{grid-template-columns:1fr 1fr 1fr}
+  .split{grid-template-columns:1.4fr 1fr}
+  .contact-grid{grid-template-columns:1.3fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;column-gap:3rem}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="bar">
+    <a class="wordmark" href="#top" aria-label="Crown Point Siding Contractors — home">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M15 2 27 12v16H3V12L15 2z" fill="none" stroke="#e8960f" stroke-width="2.4"/><path d="M6 15h18M6 20h18M6 25h18" stroke="#eceae4" stroke-width="1.6"/></svg>
+      <span>Crown Point <em>Siding</em></span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#storm">Storm Repair</a>
+      <a href="#crew">The Crew</a>
+      <a href="#area">Service Area</a>
+    </nav>
+    <a class="btn head-cta" href="#contact">Free Estimate</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO: the wind-rating wall -->
+<section class="hero laps" id="top" aria-label="Introduction" style="padding:0">
+  <div class="hero-inner">
+    <span class="nails" aria-hidden="true"></span>
+    <p class="tag">Crown Point, Indiana · Siding Contractors</p>
+    <h1 class="mph reveal">180<small>MPH Wind-Rated Siding</small></h1>
+    <p class="hero-sub reveal">Derechos, lake-effect hail, forty-degree freeze-thaw swings — <strong>Region weather doesn't take it easy on your house, so we don't take it easy on the install.</strong> We fit Crown Point homes with high-wind-rated siding systems built to hold their line when the sirens go off.</p>
+    <div class="hero-actions reveal">
+      <a class="btn" href="#contact">Request a Free Estimate</a>
+      <a class="btn btn-ghost" href="tel:+12193335071">Call (219) 333-5071</a>
+    </div>
+    <div class="hero-proof reveal">
+      <div><b>5.0 <span class="star" aria-hidden="true">★</span></b>Rated by 10 local customers</div>
+      <div><b>Local Crew</b>Hands-on, not a franchise</div>
+      <div><b>Lake County</b>Crown Point &amp; all of NWI</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES: spec-sheet ledger -->
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">What We Install</p>
+    <h2 class="reveal">The Spec Sheet</h2>
+    <p class="lede">No fluff, no mystery packages. Six things we do, done right, on homes like yours.</p>
+    <div class="ledger">
+      <div class="row reveal">
+        <span class="num">01</span><h3>Vinyl Siding Installation</h3>
+        <p>Modern high-wind-rated vinyl systems, locked and fastened for Lake County gusts — not the flap-in-the-breeze installs you see after every storm.</p>
+      </div>
+      <div class="row reveal">
+        <span class="num">02</span><h3>Fiber Cement (James Hardie) Siding</h3>
+        <p>Hardie board for homeowners who want the toughest shell on the block. Resists hail, fire, rot, and the freeze-thaw cycle that eats lesser materials.</p>
+      </div>
+      <div class="row reveal">
+        <span class="num">03</span><h3>Insulated Siding Upgrades</h3>
+        <p>Add a layer of rigid insulation to your walls while you re-side. Tighter house, quieter rooms, lower heating bills through Region winters.</p>
+      </div>
+      <div class="row reveal">
+        <span class="num">04</span><h3>Siding Repair &amp; Storm Damage Restoration</h3>
+        <p>Cracked, blown-off, or hail-pocked panels replaced and matched. We document everything to keep your insurance claim moving.</p>
+      </div>
+      <div class="row reveal">
+        <span class="num">05</span><h3>Soffit &amp; Fascia Replacement</h3>
+        <p>The trim that keeps water, wind, and critters out of your roofline. We replace rotted soffit and fascia so the whole system seals up right.</p>
+      </div>
+      <div class="row reveal">
+        <span class="num">06</span><h3>Color &amp; Style Consultations</h3>
+        <p>Selling soon or staying for decades — we'll walk your street, look at the neighborhood, and help you pick a profile and color that earns its curb appeal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORM DAMAGE -->
+<section id="storm">
+  <div class="wrap">
+    <p class="kicker">Storm Damage</p>
+    <h2 class="reveal">When the Region Hits Back</h2>
+    <p class="lede">A derecho doesn't care how nice your siding looked yesterday. When Lake County storms tear panels loose, here's how we handle it.</p>
+    <div class="storm-grid">
+      <div class="storm-card reveal">
+        <h3>Fast Inspection</h3>
+        <p>We come out, walk the whole exterior, and tell you plainly what's damaged, what's fine, and what can wait. No manufactured urgency.</p>
+      </div>
+      <div class="storm-card reveal">
+        <h3>Insurance-Claim Friendly</h3>
+        <p>Photo documentation, clear scope of work, and estimates written the way adjusters need to see them — so your claim doesn't stall out.</p>
+      </div>
+      <div class="storm-card reveal">
+        <h3>Built Back Stronger</h3>
+        <p>We don't just patch what blew off. Repairs go back on with high-wind-rated fastening so the same storm can't take the same panel twice.</p>
+      </div>
+    </div>
+    <p class="hazard reveal">Siding flapping after a storm? Call before the next front rolls in.</p>
+  </div>
+</section>
+
+<!-- CREW -->
+<section id="crew">
+  <div class="wrap">
+    <p class="kicker">Who's On Your House</p>
+    <h2 class="reveal">A Crown Point Crew, Not a Call Center</h2>
+    <div class="split">
+      <ul class="checklist">
+        <li class="reveal">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15.5 17 5" fill="none" stroke="#e8960f" stroke-width="2.6"/></svg>
+          <div><strong>Local &amp; Hands-On</strong>We're based on Sherman Street, not a national franchise routing you through a sales office. The people who quote your job are the people on your ladder.</div>
+        </li>
+        <li class="reveal">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15.5 17 5" fill="none" stroke="#e8960f" stroke-width="2.6"/></svg>
+          <div><strong>Built for Region Weather</strong>Wind, hail, lake-effect snow, freeze-thaw — every material and fastening choice we make starts with what Northwest Indiana throws at a house.</div>
+        </li>
+        <li class="reveal">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15.5 17 5" fill="none" stroke="#e8960f" stroke-width="2.6"/></svg>
+          <div><strong>Older Homes Are Our Specialty</strong>Full tear-off and re-side projects on older Crown Point houses — the ones with surprises under the old siding. We've seen it and we fix it right.</div>
+        </li>
+        <li class="reveal">
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10.5 8 15.5 17 5" fill="none" stroke="#e8960f" stroke-width="2.6"/></svg>
+          <div><strong>Straight Estimates, No Upsell</strong>You get a clear number for the work you actually need. If a repair will do the job, we won't push you into a re-side.</div>
+        </li>
+      </ul>
+      <div class="rating-slab reveal">
+        <div class="big">5.0</div>
+        <div class="stars" aria-label="Five out of five stars">★★★★★</div>
+        <p>Perfect rating across 10 reviews from Crown Point &amp; Lake County homeowners. Small number, zero misses — we intend to keep it that way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="wrap">
+    <p class="kicker">How It Works</p>
+    <h2 class="reveal">From Estimate to Armored</h2>
+    <div class="steps">
+      <div class="step reveal"><h3>Free Inspection &amp; Estimate</h3><p>We walk your exterior, measure, check for hidden rot or water damage, and give you a straightforward written number.</p></div>
+      <div class="step reveal"><h3>Material &amp; Color Selection</h3><p>Vinyl, insulated, or James Hardie fiber cement — we lay out real samples and honest trade-offs for your house and budget.</p></div>
+      <div class="step reveal"><h3>Tear-Off &amp; Prep</h3><p>Old siding comes off, sheathing gets inspected and repaired, and the wall is wrapped and flashed before a single new panel goes up.</p></div>
+      <div class="step reveal"><h3>Wind-Rated Install</h3><p>Panels fastened to spec for high-wind performance, soffit and fascia sealed, jobsite cleaned like we were never there.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section id="area">
+  <div class="wrap">
+    <p class="kicker">Service Area</p>
+    <h2 class="reveal">Crown Point &amp; the Rest of the Region</h2>
+    <p class="lede">Home base is Crown Point. If you're in Lake County or nearby Northwest Indiana, we'll come look at your siding.</p>
+    <div class="area-tags reveal">
+      <span class="hq">Crown Point — HQ</span>
+      <span>Cedar Lake</span>
+      <span>St. John</span>
+      <span>Winfield</span>
+      <span>Merrillville</span>
+      <span>Schererville</span>
+      <span>Lowell</span>
+      <span>Greater Lake County / NWI</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <p class="kicker">Next Step</p>
+    <h2 class="reveal">Get Your Free Siding Estimate</h2>
+    <p class="lede">One call. We come out, inspect the whole exterior, and hand you a clear estimate — for storm damage, a repair, or a full re-side.</p>
+    <div class="contact-grid">
+      <ul class="contact-list">
+        <li class="reveal">
+          <b>Phone</b>
+          <a class="phone-big" href="tel:+12193335071">(219) 333-5071</a>
+        </li>
+        <li class="reveal">
+          <b>Address</b>
+          721 N Sherman St, Crown Point, IN 46307
+        </li>
+        <li class="reveal">
+          <b>Web</b>
+          <a href="https://crownpointsidingcontractors.com">crownpointsidingcontractors.com</a>
+        </li>
+      </ul>
+      <div class="contact-note reveal">
+        <h3>Storm Damage?</h3>
+        <p>Don't wait on the insurance paperwork alone. Call us first — we'll document the damage and write the estimate the way your claim needs it.</p>
+        <a class="btn" href="tel:+12193335071">Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; 2026 Crown Point Siding Contractors · 721 N Sherman St, Crown Point, IN 46307 · <a href="tel:+12193335071" style="text-decoration:none;border-bottom:1px solid var(--hairline)">(219) 333-5071</a></div>
+    <div class="credit">Website sample by Wild Card Creative Co</div>
+  </div>
+</footer>
+
+</body>
+</html>
